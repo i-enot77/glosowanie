@@ -1,0 +1,4 @@
+20231212	19:58:54	3a5c6460-ed14-448f-b77e-ebac098746b3	Error: ENOENT: no such file or directory, stat 'C:\Users\maiko\Desktop\zajęcia\zajecia\views\404.html'
+20231212	20:01:25	fe1111d5-0a98-49e2-a910-f193b6dbbf0b	Error: ENOENT: no such file or directory, stat 'C:\Users\maiko\Desktop\zajęcia\zajecia\views\404.html'
+20231212	20:01:53	25473965-573a-4e3f-92c5-f6923c2b1e17	Error: ENOENT: no such file or directory, stat 'C:\Users\maiko\Desktop\zajęcia\zajecia\views\404.html'
+20231212	20:07:45	e95ebe5e-d01f-4fb8-966e-7e9fd879d9b0	Error: ENOENT: no such file or directory, stat 'C:\Users\maiko\Desktop\zajęcia\zajecia\views\404.html'

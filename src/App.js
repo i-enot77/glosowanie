@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+import RegistrationForm from "./components/login/RegistrationForm";
+import LoginForm from "./components/login/LoginForm";
+import Dashboard from "./components/glosowanie/Dashboard";
+import Vote from "./components/glosowanie/Vote";
+import PersistLogin from "./components/login/PersistLogin";
+import ResetPwdRequest from "./components/login/ResetPwdRequest";
+import ResetPassword from "./components/login/ResetPassword";
+import SendEmailInfo from "./components/login/SendEmailInfo";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path={"/register"} element={<RegistrationForm />} />
+        <Route path={"/login"} element={<LoginForm />} />
+        <Route path={"/"} element={<Dashboard />} />
+        <Route path="/request-reset" element={<ResetPwdRequest />} />
+        <Route path="/reset-password/:token" element={<ResetPassword />} />
+        <Route path={"/sended-email"} element={<SendEmailInfo />} />
+        <Route element={<PersistLogin />}>
+          <Route path={"/vote"} element={<Vote />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
